@@ -1,0 +1,6 @@
+framework module Pods_Abhi_Babriya {
+  umbrella header "Pods-Abhi Babriya-umbrella.h"
+
+  export *
+  module * { export * }
+}

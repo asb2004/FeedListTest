@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Abhi_Babriya" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzS-Es-03f">
+                                <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6NC-Dn-Y3e">
+                                        <rect key="frame" x="167.66666666666666" y="11.999999999999998" width="58" height="26.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6NC-Dn-Y3e" firstAttribute="centerX" secondItem="bzS-Es-03f" secondAttribute="centerX" id="DOp-xo-rYp"/>
+                                    <constraint firstAttribute="height" constant="50" id="qZR-mz-ZMy"/>
+                                    <constraint firstItem="6NC-Dn-Y3e" firstAttribute="centerY" secondItem="bzS-Es-03f" secondAttribute="centerY" id="xPq-Ot-Zgs"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fcK-FT-gIZ">
+                                <rect key="frame" x="0.0" y="109" width="393" height="743"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gfJ-mO-vNH">
+                                <rect key="frame" x="0.0" y="109" width="393" height="743"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IML-mj-t16">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="743"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ArH-9I-c1L">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="1520"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wge-nX-FHy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1520"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oGl-ra-izL">
+                                                                <rect key="frame" x="0.0" y="0.0" width="393" height="500"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCF-7g-iJx">
+                                                                        <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="50" id="mW8-BF-2d6"/>
+                                                                            <constraint firstAttribute="width" constant="50" id="oF9-o2-HIZ"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="skeletonCornerRadius">
+                                                                                <real key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="MBP-Sm-mLV">
+                                                                        <rect key="frame" x="75" y="14.666666666666668" width="303" height="40.666666666666657"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNK-Ms-cGq">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="20.333333333333332"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="100" id="2Eo-qD-IsH"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="linesCornerRadius">
+                                                                                        <integer key="value" value="5"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrC-Ug-Lbz">
+                                                                                <rect key="frame" x="0.0" y="20.333333333333329" width="70" height="20.333333333333329"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="70" id="a2C-JM-5qg"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="linesCornerRadius">
+                                                                                        <integer key="value" value="5"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </stackView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mld-q7-UhH">
+                                                                        <rect key="frame" x="0.0" y="70" width="393" height="430"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="SCF-7g-iJx" firstAttribute="top" secondItem="oGl-ra-izL" secondAttribute="top" constant="10" id="1cd-qs-8EH"/>
+                                                                    <constraint firstItem="MBP-Sm-mLV" firstAttribute="centerY" secondItem="SCF-7g-iJx" secondAttribute="centerY" id="78Q-BA-seB"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="MBP-Sm-mLV" secondAttribute="trailing" constant="15" id="A4R-qf-clD"/>
+                                                                    <constraint firstItem="Mld-q7-UhH" firstAttribute="leading" secondItem="oGl-ra-izL" secondAttribute="leading" id="Lx9-Wc-2a3"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Mld-q7-UhH" secondAttribute="trailing" id="NiE-Qf-qNf"/>
+                                                                    <constraint firstItem="SCF-7g-iJx" firstAttribute="leading" secondItem="oGl-ra-izL" secondAttribute="leading" constant="10" id="bgr-7q-aVW"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="Mld-q7-UhH" secondAttribute="bottom" id="gjm-BU-ANI"/>
+                                                                    <constraint firstItem="Mld-q7-UhH" firstAttribute="top" secondItem="SCF-7g-iJx" secondAttribute="bottom" constant="10" id="kX8-JW-ZgO"/>
+                                                                    <constraint firstItem="MBP-Sm-mLV" firstAttribute="leading" secondItem="SCF-7g-iJx" secondAttribute="trailing" constant="15" id="ncJ-xZ-SGd"/>
+                                                                    <constraint firstAttribute="height" constant="500" id="oAA-DY-Bqa"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mTM-pu-Jf8">
+                                                                <rect key="frame" x="0.0" y="510" width="393" height="500"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MMN-uH-bFo">
+                                                                        <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="50" id="OJj-Bi-jII"/>
+                                                                            <constraint firstAttribute="width" constant="50" id="xId-lf-ZzP"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="skeletonCornerRadius">
+                                                                                <real key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Dhm-3e-2FP">
+                                                                        <rect key="frame" x="75" y="14.666666666666625" width="303" height="40.666666666666657"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqP-kf-JXC">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="20.333333333333332"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="100" id="WR1-sg-Q6W"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="linesCornerRadius">
+                                                                                        <integer key="value" value="5"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEt-Yx-QAE">
+                                                                                <rect key="frame" x="0.0" y="20.333333333333371" width="70" height="20.333333333333329"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="70" id="yxW-U5-AXe"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="linesCornerRadius">
+                                                                                        <integer key="value" value="5"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </stackView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqQ-DR-q7x">
+                                                                        <rect key="frame" x="0.0" y="70" width="393" height="430"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="bqQ-DR-q7x" firstAttribute="top" secondItem="MMN-uH-bFo" secondAttribute="bottom" constant="10" id="0sS-VO-yyy"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Dhm-3e-2FP" secondAttribute="trailing" constant="15" id="6dX-44-0c5"/>
+                                                                    <constraint firstItem="Dhm-3e-2FP" firstAttribute="leading" secondItem="MMN-uH-bFo" secondAttribute="trailing" constant="15" id="EHI-PR-she"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="bqQ-DR-q7x" secondAttribute="trailing" id="Ez0-kH-0wM"/>
+                                                                    <constraint firstItem="Dhm-3e-2FP" firstAttribute="centerY" secondItem="MMN-uH-bFo" secondAttribute="centerY" id="Mnd-P5-ue9"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="bqQ-DR-q7x" secondAttribute="bottom" id="SbD-Pe-o3C"/>
+                                                                    <constraint firstItem="bqQ-DR-q7x" firstAttribute="leading" secondItem="mTM-pu-Jf8" secondAttribute="leading" id="XeS-Rl-VFK"/>
+                                                                    <constraint firstItem="MMN-uH-bFo" firstAttribute="top" secondItem="mTM-pu-Jf8" secondAttribute="top" constant="10" id="d4T-qX-QiN"/>
+                                                                    <constraint firstAttribute="height" constant="500" id="dML-Tr-Kuj"/>
+                                                                    <constraint firstItem="MMN-uH-bFo" firstAttribute="leading" secondItem="mTM-pu-Jf8" secondAttribute="leading" constant="10" id="ea0-Wc-EVW"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bi9-XI-6Kf">
+                                                                <rect key="frame" x="0.0" y="1020" width="393" height="500"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70H-fm-Jfc">
+                                                                        <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="50" id="1Vq-HU-TND"/>
+                                                                            <constraint firstAttribute="height" constant="50" id="dwC-x1-F71"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="skeletonCornerRadius">
+                                                                                <real key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="AwN-nd-NMM">
+                                                                        <rect key="frame" x="75" y="14.666666666666739" width="303" height="40.666666666666657"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hs5-9R-fLJ">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="20.333333333333332"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="100" id="Drh-aB-TOC"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="linesCornerRadius">
+                                                                                        <integer key="value" value="5"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZ3-dD-DyW">
+                                                                                <rect key="frame" x="0.0" y="20.333333333333258" width="70" height="20.333333333333329"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="70" id="P1R-LC-Ufg"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="linesCornerRadius">
+                                                                                        <integer key="value" value="5"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </stackView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aky-fD-qHR">
+                                                                        <rect key="frame" x="0.0" y="70" width="393" height="430"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="aky-fD-qHR" secondAttribute="bottom" id="AXl-B1-Gxg"/>
+                                                                    <constraint firstItem="70H-fm-Jfc" firstAttribute="top" secondItem="bi9-XI-6Kf" secondAttribute="top" constant="10" id="Mm6-fC-KZH"/>
+                                                                    <constraint firstItem="70H-fm-Jfc" firstAttribute="leading" secondItem="bi9-XI-6Kf" secondAttribute="leading" constant="10" id="OZz-sQ-VGq"/>
+                                                                    <constraint firstItem="AwN-nd-NMM" firstAttribute="leading" secondItem="70H-fm-Jfc" secondAttribute="trailing" constant="15" id="QQV-df-BnW"/>
+                                                                    <constraint firstItem="aky-fD-qHR" firstAttribute="top" secondItem="70H-fm-Jfc" secondAttribute="bottom" constant="10" id="drh-6S-59a"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="AwN-nd-NMM" secondAttribute="trailing" constant="15" id="luU-v2-HJF"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="aky-fD-qHR" secondAttribute="trailing" id="n8d-AV-abt"/>
+                                                                    <constraint firstAttribute="height" constant="500" id="phf-RI-VlE"/>
+                                                                    <constraint firstItem="AwN-nd-NMM" firstAttribute="centerY" secondItem="70H-fm-Jfc" secondAttribute="centerY" id="te2-ID-b8Y"/>
+                                                                    <constraint firstItem="aky-fD-qHR" firstAttribute="leading" secondItem="bi9-XI-6Kf" secondAttribute="leading" id="til-ra-jJG"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Wge-nX-FHy" firstAttribute="leading" secondItem="ArH-9I-c1L" secondAttribute="leading" id="Lnh-Sb-E3t"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Wge-nX-FHy" secondAttribute="bottom" id="Mnl-up-nfr"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Wge-nX-FHy" secondAttribute="trailing" id="VD6-41-vjM"/>
+                                                    <constraint firstItem="Wge-nX-FHy" firstAttribute="top" secondItem="ArH-9I-c1L" secondAttribute="top" id="mic-Jm-wh5"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="ArH-9I-c1L" firstAttribute="top" secondItem="IML-mj-t16" secondAttribute="top" id="1EG-ab-vfh"/>
+                                            <constraint firstItem="ArH-9I-c1L" firstAttribute="leading" secondItem="IML-mj-t16" secondAttribute="leading" id="J8o-g3-ZMT"/>
+                                            <constraint firstItem="ArH-9I-c1L" firstAttribute="width" secondItem="IML-mj-t16" secondAttribute="width" id="RNr-M5-vL0"/>
+                                            <constraint firstAttribute="bottom" secondItem="ArH-9I-c1L" secondAttribute="bottom" id="hOJ-6n-Kgw"/>
+                                            <constraint firstAttribute="trailing" secondItem="ArH-9I-c1L" secondAttribute="trailing" id="vcf-rO-3zC"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="IML-mj-t16" secondAttribute="bottom" id="AgA-Jh-QG6"/>
+                                    <constraint firstItem="IML-mj-t16" firstAttribute="leading" secondItem="gfJ-mO-vNH" secondAttribute="leading" id="Ma5-Gj-B3W"/>
+                                    <constraint firstAttribute="trailing" secondItem="IML-mj-t16" secondAttribute="trailing" id="Prw-KW-EQd"/>
+                                    <constraint firstItem="IML-mj-t16" firstAttribute="top" secondItem="gfJ-mO-vNH" secondAttribute="top" id="TGe-mx-Qzs"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gfJ-mO-vNH" firstAttribute="top" secondItem="bzS-Es-03f" secondAttribute="bottom" id="1Wr-aX-V1f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bzS-Es-03f" secondAttribute="trailing" id="9Ky-mO-lAj"/>
+                            <constraint firstItem="bzS-Es-03f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="P3q-di-s6t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gfJ-mO-vNH" secondAttribute="trailing" id="Xgl-D5-Jjs"/>
+                            <constraint firstItem="bzS-Es-03f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aJH-Vn-mdF"/>
+                            <constraint firstItem="fcK-FT-gIZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="e1K-MY-zmH"/>
+                            <constraint firstItem="fcK-FT-gIZ" firstAttribute="top" secondItem="bzS-Es-03f" secondAttribute="bottom" id="jXd-Qc-0QL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fcK-FT-gIZ" secondAttribute="trailing" id="jub-l9-DkU"/>
+                            <constraint firstAttribute="bottom" secondItem="fcK-FT-gIZ" secondAttribute="bottom" id="nFN-ui-oK0"/>
+                            <constraint firstItem="gfJ-mO-vNH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ndZ-Bk-d9h"/>
+                            <constraint firstAttribute="bottom" secondItem="gfJ-mO-vNH" secondAttribute="bottom" id="q84-vQ-9UN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tblPostView" destination="fcK-FT-gIZ" id="aTV-y1-BWm"/>
+                        <outlet property="vwSkelton" destination="gfJ-mO-vNH" id="2V2-2p-vfk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="-27"/>
+        </scene>
+    </scenes>
+</document>
